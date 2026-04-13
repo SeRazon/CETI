@@ -241,7 +241,7 @@ const dimRef = [
 .search-input:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+  box-shadow: 0 0 0 3px rgba(0,113,227,0.12);
 }
 
 .types-body {
@@ -275,8 +275,8 @@ const dimRef = [
   display: flex;
   align-items: center;
   gap: 12px;
-  background: rgba(99,102,241,0.06);
-  border: 1px solid rgba(99,102,241,0.2);
+  background: rgba(0,113,227,0.05);
+  border: 1px solid rgba(0,113,227,0.15);
   border-radius: var(--radius-lg);
   padding: 16px 20px;
   font-size: 0.9rem;

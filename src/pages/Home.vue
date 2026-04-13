@@ -134,45 +134,45 @@ const dimensions = [
   {
     code: 'C / S',
     icon: '⚙️',
-    bg: 'linear-gradient(135deg, #ede9fe, #ddd6fe)',
+    bg: 'linear-gradient(135deg, #e3f2ff, #cce4ff)',
     left: 'Constructor',
-    leftColor: '#7c3aed',
+    leftColor: '#0071e3',
     arrow: 'vs',
     right: 'Strategist',
-    rightColor: '#6366f1',
+    rightColor: '#0062c5',
     desc: '你是先动手写代码，还是先规划架构蓝图？'
   },
   {
     code: 'T / U',
     icon: '📚',
-    bg: 'linear-gradient(135deg, #e0f2fe, #bae6fd)',
+    bg: 'linear-gradient(135deg, #fff5e6, #ffeabb)',
     left: 'Theoretical',
-    leftColor: '#0369a1',
+    leftColor: '#c06800',
     arrow: 'vs',
     right: 'Utilitarian',
-    rightColor: '#0284c7',
+    rightColor: '#ff9500',
     desc: '你追求深层原理，还是偏爱实用主义？'
   },
   {
     code: 'I / E',
     icon: '👥',
-    bg: 'linear-gradient(135deg, #dcfce7, #bbf7d0)',
+    bg: 'linear-gradient(135deg, #edfff3, #d3f9e2)',
     left: 'Independent',
-    leftColor: '#15803d',
+    leftColor: '#1f8c3e',
     arrow: 'vs',
     right: 'Ensemble',
-    rightColor: '#16a34a',
+    rightColor: '#34c759',
     desc: '你倾向独立深潜，还是团队协作共创？'
   },
   {
     code: 'R / F',
     icon: '🛡️',
-    bg: 'linear-gradient(135deg, #fef3c7, #fde68a)',
+    bg: 'linear-gradient(135deg, #e3f5fd, #c3eafc)',
     left: 'Rigorous',
-    leftColor: '#b45309',
+    leftColor: '#007aad',
     arrow: 'vs',
     right: 'Flexible',
-    rightColor: '#d97706',
+    rightColor: '#32ade6',
     desc: '你严格执行规范，还是灵活快速迭代？'
   }
 ]
@@ -213,21 +213,21 @@ const previewTypes = [
 
 .blob-1 {
   width: 500px; height: 500px;
-  background: radial-gradient(circle, #a5b4fc, transparent 70%);
+  background: radial-gradient(circle, #99c9ff, transparent 70%);
   top: -200px; left: -100px;
   animation: float 8s ease-in-out infinite;
 }
 
 .blob-2 {
   width: 400px; height: 400px;
-  background: radial-gradient(circle, #67e8f9, transparent 70%);
+  background: radial-gradient(circle, #5ac8fa, transparent 70%);
   top: -100px; right: -100px;
   animation: float 10s ease-in-out infinite reverse;
 }
 
 .blob-3 {
   width: 300px; height: 300px;
-  background: radial-gradient(circle, #c4b5fd, transparent 70%);
+  background: radial-gradient(circle, #a8d8ff, transparent 70%);
   bottom: 0; left: 50%;
   animation: float 12s ease-in-out infinite;
 }
@@ -242,8 +242,8 @@ const previewTypes = [
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(99,102,241,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99,102,241,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(0,113,227,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,113,227,0.04) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -257,8 +257,8 @@ const previewTypes = [
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(99,102,241,0.08);
-  border: 1px solid rgba(99,102,241,0.2);
+  background: rgba(0,113,227,0.07);
+  border: 1px solid rgba(0,113,227,0.18);
   color: var(--primary);
   padding: 6px 16px;
   border-radius: 99px;

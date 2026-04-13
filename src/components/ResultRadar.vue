@@ -34,23 +34,23 @@ const option = computed(() => ({
   },
   radar: {
     indicator: [
-      { name: 'Constructor\n构建者', max: 100, color: '#6366f1' },
-      { name: 'Theoretical\n理论派', max: 100, color: '#06b6d4' },
-      { name: 'Independent\n独立性', max: 100, color: '#10b981' },
-      { name: 'Rigorous\n严谨性', max: 100, color: '#f59e0b' }
+      { name: 'Constructor\n构建者', max: 100, color: '#0071e3' },
+      { name: 'Theoretical\n理论派', max: 100, color: '#ff9500' },
+      { name: 'Independent\n独立性', max: 100, color: '#34c759' },
+      { name: 'Rigorous\n严谨性', max: 100, color: '#32ade6' }
     ],
     center: ['50%', '50%'],
     radius: '68%',
     shape: 'polygon',
     splitNumber: 5,
     axisName: {
-      color: '#64748b',
+      color: '#6e6e73',
       fontSize: 11,
       fontFamily: 'PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif'
     },
     splitLine: {
       lineStyle: {
-        color: 'rgba(226, 232, 240, 0.8)'
+        color: 'rgba(210,210,215,0.8)'
       }
     },
     splitArea: {
@@ -77,7 +77,7 @@ const option = computed(() => ({
           symbol: 'circle',
           symbolSize: 6,
           lineStyle: {
-            color: '#6366f1',
+            color: '#0071e3',
             width: 2.5
           },
           areaStyle: {
@@ -85,13 +85,13 @@ const option = computed(() => ({
               type: 'radial',
               x: 0.5, y: 0.5, r: 0.5,
               colorStops: [
-                { offset: 0, color: 'rgba(99,102,241,0.5)' },
-                { offset: 1, color: 'rgba(6,182,212,0.2)' }
+                { offset: 0, color: 'rgba(0,113,227,0.4)' },
+                { offset: 1, color: 'rgba(50,173,230,0.15)' }
               ]
             }
           },
           itemStyle: {
-            color: '#6366f1',
+            color: '#0071e3',
             borderColor: '#fff',
             borderWidth: 2
           }

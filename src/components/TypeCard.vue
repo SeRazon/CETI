@@ -74,13 +74,13 @@ function toggle() {
 
 .type-card.is-highlight {
   border-color: var(--primary);
-  background: linear-gradient(135deg, #fff, rgba(99,102,241,0.04));
-  box-shadow: 0 0 0 4px rgba(99,102,241,0.15), var(--shadow-md);
+  background: linear-gradient(135deg, #fff, rgba(0,113,227,0.04));
+  box-shadow: 0 0 0 4px rgba(0,113,227,0.12), var(--shadow-md);
 }
 
 .type-card.expanded {
   border-color: var(--primary-light);
-  background: linear-gradient(135deg, #fff, rgba(99,102,241,0.02));
+  background: linear-gradient(135deg, #fff, rgba(0,113,227,0.02));
 }
 
 .type-emoji {
@@ -139,7 +139,7 @@ function toggle() {
 }
 
 .trait-tag {
-  background: rgba(99,102,241,0.08);
+  background: rgba(0,113,227,0.07);
   color: var(--primary);
   padding: 3px 10px;
   border-radius: 99px;

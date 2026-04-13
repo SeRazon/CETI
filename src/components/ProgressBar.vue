@@ -140,7 +140,7 @@ const pageLabels = ['C/S', 'T/U', 'I/E', 'R/F']
 
 .progress-step.current .step-dot {
   background: var(--primary);
-  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.18);
   transform: scale(1.2);
 }
 

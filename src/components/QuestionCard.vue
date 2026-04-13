@@ -65,8 +65,8 @@ function select(key) {
 }
 
 .question-card.has-answer {
-  border-color: rgba(99, 102, 241, 0.15);
-  background: linear-gradient(135deg, #fff, rgba(99, 102, 241, 0.02));
+  border-color: rgba(0, 113, 227, 0.15);
+  background: linear-gradient(135deg, #fff, rgba(0, 113, 227, 0.02));
 }
 
 .question-header {
@@ -98,7 +98,7 @@ function select(key) {
   color: var(--border);
 }
 .star.filled {
-  color: #f59e0b;
+  color: #ff9500;
 }
 
 .question-text {
@@ -135,7 +135,7 @@ function select(key) {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(99,102,241,0.05), transparent);
+  background: linear-gradient(135deg, rgba(0,113,227,0.04), transparent);
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -152,8 +152,8 @@ function select(key) {
 
 .option-btn.selected {
   border-color: var(--primary);
-  background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(99,102,241,0.03));
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  background: linear-gradient(135deg, rgba(0,113,227,0.07), rgba(0,113,227,0.02));
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.12);
 }
 
 .option-key {

@@ -242,12 +242,12 @@ async function shareResult() {
 }
 .rblob-1 {
   width: 400px; height: 400px;
-  background: radial-gradient(circle, #a5b4fc, transparent 70%);
+  background: radial-gradient(circle, #99c9ff, transparent 70%);
   top: -100px; right: -100px;
 }
 .rblob-2 {
   width: 300px; height: 300px;
-  background: radial-gradient(circle, #67e8f9, transparent 70%);
+  background: radial-gradient(circle, #5ac8fa, transparent 70%);
   bottom: -50px; left: 10%;
 }
 
@@ -387,7 +387,7 @@ async function shareResult() {
 }
 
 .score-bar-fill.right {
-  background: linear-gradient(90deg, var(--accent), #67e8f9);
+  background: linear-gradient(90deg, var(--accent), #5ac8fa);
 }
 
 .score-pair-vals {
@@ -424,7 +424,7 @@ async function shareResult() {
   gap: 8px;
   font-size: 0.85rem;
   color: var(--text);
-  background: rgba(99,102,241,0.06);
+  background: rgba(0,113,227,0.05);
   padding: 8px 12px;
   border-radius: var(--radius);
 }
@@ -489,7 +489,7 @@ async function shareResult() {
 
 .comp-item.winner {
   border-color: var(--primary-light);
-  background: rgba(99,102,241,0.04);
+  background: rgba(0,113,227,0.04);
 }
 
 .comp-letters {

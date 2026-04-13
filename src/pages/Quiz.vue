@@ -188,8 +188,8 @@ function confirmReset() {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: rgba(16,185,129,0.1);
-  color: #059669;
+  background: rgba(52,199,89,0.10);
+  color: #1f8c3e;
   padding: 6px 14px;
   border-radius: 99px;
   font-size: 0.85rem;
@@ -243,8 +243,8 @@ function confirmReset() {
 }
 
 .btn-finish {
-  background: linear-gradient(135deg, #059669, #10b981) !important;
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4) !important;
+  background: #34c759 !important;
+  box-shadow: 0 4px 14px rgba(52, 199, 89, 0.35) !important;
 }
 
 button:disabled {
