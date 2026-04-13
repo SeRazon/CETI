@@ -194,7 +194,7 @@ function retake() {
 }
 
 async function shareResult() {
-  const url = window.location.href
+  const url = 'https://ceti.xhsr.org.cn'
   const text = `我在 CETI 测试中得到了 ${store.result.type} — ${typeInfo.value?.emoji} ${typeInfo.value?.title}！`
 
   try {
