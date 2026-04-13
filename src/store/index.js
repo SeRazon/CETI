@@ -1,6 +1,10 @@
 import { defineStore } from 'pinia'
 import { questions } from '@/data/questions'
 
+// A score ≥ THRESHOLD (out of 10) on the dominant pole determines the type letter.
+// With 10 questions per dimension, ≥6 means a clear majority preference.
+const THRESHOLD = 6
+
 export const useQuizStore = defineStore('quiz', {
   state: () => ({
     answers: {},      // { questionId: 'A' | 'B' }
@@ -48,10 +52,10 @@ export const useQuizStore = defineStore('quiz', {
         dims[dim][chosen]++
       })
 
-      const csTotal = dims.CS.C + dims.CS.S || 1
-      const tuTotal = dims.TU.T + dims.TU.U || 1
-      const ieTotal = dims.IE.I + dims.IE.E || 1
-      const rfTotal = dims.RF.R + dims.RF.F || 1
+      const csTotal = dims.CS.C + dims.CS.S === 0 ? 1 : dims.CS.C + dims.CS.S
+      const tuTotal = dims.TU.T + dims.TU.U === 0 ? 1 : dims.TU.T + dims.TU.U
+      const ieTotal = dims.IE.I + dims.IE.E === 0 ? 1 : dims.IE.I + dims.IE.E
+      const rfTotal = dims.RF.R + dims.RF.F === 0 ? 1 : dims.RF.R + dims.RF.F
 
       const scores = {
         C: Math.round((dims.CS.C / csTotal) * 100),
@@ -64,7 +68,6 @@ export const useQuizStore = defineStore('quiz', {
         F: Math.round((dims.RF.F / rfTotal) * 100)
       }
 
-      const THRESHOLD = 6
       const cs = dims.CS.C >= THRESHOLD ? 'C' : 'S'
       const tu = dims.TU.T >= THRESHOLD ? 'T' : 'U'
       const ie = dims.IE.I >= THRESHOLD ? 'I' : 'E'
@@ -97,6 +100,12 @@ export const useQuizStore = defineStore('quiz', {
 
     finish() {
       this.completed = true
+    },
+
+    setCurrentPage(page) {
+      if (page >= 0 && page <= 3) {
+        this.currentPage = page
+      }
     },
 
     reset() {

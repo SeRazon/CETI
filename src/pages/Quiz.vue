@@ -132,7 +132,7 @@ function finish() {
     for (let p = 0; p < 4; p++) {
       const pageQs = questions.slice(p * 10, p * 10 + 10)
       if (pageQs.some(q => !store.answers[q.id])) {
-        store.currentPage = p
+        store.setCurrentPage(p)
         window.scrollTo({ top: 0, behavior: 'smooth' })
         break
       }
