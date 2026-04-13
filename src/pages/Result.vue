@@ -189,20 +189,26 @@ function retake() {
 }
 
 async function shareResult() {
+  const url = window.location.href
   const text = `我在 CETI 测试中得到了 ${store.result.type} — ${typeInfo.value?.emoji} ${typeInfo.value?.title}！`
-  const shareText = text + ' ' + window.location.href
 
   try {
     if (navigator.share) {
-      await navigator.share({ title: 'CETI 测试结果', text })
+      await navigator.share({
+        title: 'CETI 测试结果',
+        text,
+        url,
+      })
     } else if (navigator.clipboard) {
-      await navigator.clipboard.writeText(shareText)
+      await navigator.clipboard.writeText(text + ' ' + url)
       alert('结果已复制到剪贴板！')
     } else {
       alert('当前环境不支持分享或复制功能。')
     }
   } catch (error) {
-    alert('分享失败，请稍后重试。')
+    if (error.name !== 'AbortError') {
+      alert('分享失败，请稍后重试。')
+    }
   }
 }
 </script>
