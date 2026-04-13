@@ -188,13 +188,21 @@ function retake() {
   router.push('/quiz')
 }
 
-function shareResult() {
+async function shareResult() {
   const text = `我在 CETI 测试中得到了 ${store.result.type} — ${typeInfo.value?.emoji} ${typeInfo.value?.title}！`
-  if (navigator.share) {
-    navigator.share({ title: 'CETI 测试结果', text })
-  } else if (navigator.clipboard) {
-    navigator.clipboard.writeText(text + ' ' + window.location.href)
-    alert('结果已复制到剪贴板！')
+  const shareText = text + ' ' + window.location.href
+
+  try {
+    if (navigator.share) {
+      await navigator.share({ title: 'CETI 测试结果', text })
+    } else if (navigator.clipboard) {
+      await navigator.clipboard.writeText(shareText)
+      alert('结果已复制到剪贴板！')
+    } else {
+      alert('当前环境不支持分享或复制功能。')
+    }
+  } catch (error) {
+    alert('分享失败，请稍后重试。')
   }
 }
 </script>
