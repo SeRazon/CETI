@@ -68,7 +68,7 @@
           v-else
           class="btn btn-primary"
           @click="finish"
-          :disabled="!store.answeredCount === store.totalQuestions"
+          :disabled="store.answeredCount !== store.totalQuestions"
           :class="{ 'btn-finish': allDone }"
         >
           {{ allDone ? '🎉 查看结果' : `还剩 ${store.totalQuestions - store.answeredCount} 题` }}

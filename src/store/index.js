@@ -64,10 +64,11 @@ export const useQuizStore = defineStore('quiz', {
         F: Math.round((dims.RF.F / rfTotal) * 100)
       }
 
-      const cs = dims.CS.C >= 6 ? 'C' : 'S'
-      const tu = dims.TU.T >= 6 ? 'T' : 'U'
-      const ie = dims.IE.I >= 6 ? 'I' : 'E'
-      const rf = dims.RF.R >= 6 ? 'R' : 'F'
+      const THRESHOLD = 6
+      const cs = dims.CS.C >= THRESHOLD ? 'C' : 'S'
+      const tu = dims.TU.T >= THRESHOLD ? 'T' : 'U'
+      const ie = dims.IE.I >= THRESHOLD ? 'I' : 'E'
+      const rf = dims.RF.R >= THRESHOLD ? 'R' : 'F'
 
       return {
         type: `${cs}${tu}${ie}${rf}`,
