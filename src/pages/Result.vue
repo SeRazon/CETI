@@ -134,7 +134,12 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>CETI — Computer Engineering Type Indicator</p>
+        <p>CETI — Computer Engineering Type Indicator</p><br>
+         <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer"
+     style="display:inline-flex;align-items:center;color:inherit;text-decoration:none;">
+    赣ICP备2025074193号
+  </a><br>
+        <p>作者B站：<a href="https://space.bilibili.com/472170134" target="_blank">@星鸿SeRazon</a></p><br>
         <p class="footer-sub">仅供娱乐，结果不代表任何专业评估</p>
       </div>
     </footer>
